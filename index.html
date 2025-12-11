@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Exam</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Final Exam</h1>
+        
+        <!-- Problem 1: Is the given point on the line? -->
+        <div id="problem1" class="problem">
+            <h2>Problem 1: Is the given point on the line?</h2>
+            
+            <div class="problem-content">
+                <div class="input-section">
+                    <div class="input-row">
+                        <label>Point:</label>
+                        <span id="p1-point" class="value">--</span>
+                    </div>
+                    <div class="input-row">
+                        <label>Line Equation:</label>
+                        <span id="p1-equation" class="value">--</span>
+                    </div>
+                </div>
+                
+                <div class="graph-container">
+                    <canvas id="p1-canvas" width="400" height="400"></canvas>
+                </div>
+                
+                <div id="p1-feedback" class="feedback"></div>
+                
+                <div class="buttons">
+                    <button id="p1-true" class="btn btn-true">True</button>
+                    <button id="p1-false" class="btn btn-false">False</button>
+                    <button id="p1-next" class="btn btn-next">Next</button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Problem 2: Find the Slope -->
+        <div id="problem2" class="problem">
+            <h2>Problem 2: Find the Slope of the Line Segment</h2>
+            
+            <div class="problem-content">
+                <div class="graph-container">
+                    <canvas id="p2-canvas" width="400" height="400"></canvas>
+                </div>
+                
+                <button id="p2-help" class="btn btn-help">Help</button>
+                <div id="p2-formula" class="formula hidden">
+                    m = (y₂ - y₁) / (x₂ - x₁)
+                </div>
+                
+                <div class="input-section">
+                    <label>Slope (m):</label>
+                    <input type="number" id="p2-answer" placeholder="Enter slope" step="0.01">
+                </div>
+                
+                <div id="p2-feedback" class="feedback"></div>
+                
+                <div class="buttons">
+                    <button id="p2-check" class="btn btn-check">Check</button>
+                    <button id="p2-next" class="btn btn-next">Next</button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Problem 3: Place the point -->
+        <div id="problem3" class="problem">
+            <h2>Problem 3: Place the point in the correct position</h2>
+            
+            <div class="problem-content">
+                <div class="graph-container">
+                    <canvas id="p3-canvas" width="400" height="400"></canvas>
+                </div>
+                
+                <div id="p3-target-display" class="target-display">
+                    Target: <span id="p3-target"></span>
+                </div>
+                
+                <div id="p3-feedback" class="feedback"></div>
+                
+                <div class="buttons">
+                    <button id="p3-check" class="btn btn-check">Check</button>
+                    <button id="p3-next" class="btn btn-next">Next</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
